@@ -43,7 +43,11 @@ export const generateMolecule = (
 ) => {
   const moleculeLength = getRandomInt();
   const prefix = carbonCountPrefix[moleculeLength];
-  const selectedFamily = getRandomFamily(options.familiesAllowed);
+  const selectedFamily = getRandomFamily(
+    options.familiesAllowed.filter((f) =>
+      moleculeLength === 1 ? f !== "alkenes" : f
+    )
+  );
 
   // should branches be generated?
   const canHaveBranch = options.branchesEnabled && moleculeLength > 2;
