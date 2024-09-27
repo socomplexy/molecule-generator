@@ -1,0 +1,21 @@
+.option-wrapper {
+  padding: 20px;
+  border-bottom: 1px solid gray;
+  button {
+    margin-top: 20px;
+  }
+}
+
+.molecule-wrapper {
+  display: flex;
+  padding: 10px 30px;
+}
+
+.textshadow .blurry-text {
+  color: transparent;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.molecule-name {
+  cursor: pointer;
+  padding: 0 30px;
+}

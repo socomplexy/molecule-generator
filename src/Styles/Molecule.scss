@@ -1,0 +1,96 @@
+.atom-wrapper {
+  position: relative;
+  height: 45px;
+  width: 45px;
+}
+// ############### LINES SIGNIFYING BONDS. X'S REPRESENT NUMBER, LETTER REPRESENTS POSITION
+
+//   APPLIES TO ALL LINES
+.xt::before,
+.xxt::before,
+.xb::after,
+.xxb::after,
+.xl::before,
+.xxl::before,
+.xr::after,
+.xxr::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+}
+
+// APPLIES TO TOP AND BOTTOM LINES
+.xt::before,
+.xxt::before,
+.xb::after,
+.xxb::after {
+  width: 3px;
+  height: 10px;
+  top: 0px;
+}
+.xt::before {
+  left: 22px;
+}
+.xxt::before {
+  left: 19.5px;
+  box-shadow: 5px 0px 0px 0px black;
+}
+.xb::after,
+.xxb::after {
+  top: 35px;
+}
+.xb::after {
+  left: 22px;
+}
+.xxb::after {
+  left: 19px;
+  box-shadow: 5px 0px 0px 0px black;
+}
+
+// APPLIES TO LEFT AND RIGHT LINES
+.xl::before,
+.xxl::before,
+.xr::after,
+.xxr::after {
+  width: 10px;
+  height: 3px;
+}
+.xl::before {
+  top: 11px;
+  left: -11px;
+}
+.xxl::before,
+.xxr::after {
+  top: 13px;
+}
+.xxl::before {
+  left: -10px;
+  box-shadow: 0px -5px 0px 0px black;
+}
+.xr::after {
+  left: 25px;
+}
+.xxr::after {
+  left: 25px;
+  box-shadow: 0px -5px 0px 0px black;
+}
+
+.MuiAvatar-root {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  overflow: visible !important;
+  color: black !important;
+  border: 1px solid black;
+  background-color: lightgray !important;
+
+  &.hydrogen {
+    background-color: #e3eb90 !important;
+  }
+  &.carbon {
+    background-color: #35baf6 !important;
+  }
+  &.oxygen {
+    background-color: #f381a7 !important;
+  }
+}
