@@ -1,7 +1,7 @@
-import { Options } from "./Options/Options";
 import { MoleculeName } from "./MoleculeName/MoleculeName";
+import { Options } from "./Options/Options";
 
 export const Components = {
-  Options,
   MoleculeName,
+  Options,
 };
