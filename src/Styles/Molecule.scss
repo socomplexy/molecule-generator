@@ -94,3 +94,24 @@
     background-color: #f381a7 !important;
   }
 }
+
+.molecule-wrapper {
+  display: flex;
+  padding: 10px 30px;
+}
+
+.textshadow .blurry-text {
+  color: transparent;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.molecule-name {
+  cursor: pointer;
+  padding: 0 30px;
+  flex-direction: row;
+  margin-bottom: 30px;
+  h2 {
+    width: auto;
+    display: inline;
+    margin-right: 10px;
+  }
+}

@@ -38,10 +38,11 @@ export const generateMolecule = (
     familiesAllowed: ["alkanes"],
     branchesEnabled: false,
     multipleBranchesEnabled: false,
+    maximumLength: 8,
   },
   callback
 ) => {
-  const moleculeLength = getRandomInt();
+  const moleculeLength = getRandomInt(options.maximumLength);
   const prefix = carbonCountPrefix[moleculeLength];
   const selectedFamily = getRandomFamily(
     options.familiesAllowed.filter((f) =>

@@ -2,7 +2,7 @@ import { getRandomSelection } from "./utils";
 import { getRandomInt } from "./utils";
 
 export const homologousGroups = {
-  // TODO: triglycerides, terpines
+  // TODO: triglycerides, terpines, acetates
   alkanes: {
     name: "alkanes",
     displayName: "Alkane",

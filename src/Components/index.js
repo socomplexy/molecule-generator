@@ -1,7 +1,9 @@
-import { MoleculeName } from "./MoleculeName/MoleculeName";
-import { Options } from "./Options/Options";
+import { ButtonStack } from "./ButtonStack/ButtonStack";
+import { Drawer } from "./Drawer/Drawer";
+import { Slider } from "./Slider/Slider";
 
 export const Components = {
-  MoleculeName,
-  Options,
+  ButtonStack,
+  Drawer,
+  Slider,
 };
