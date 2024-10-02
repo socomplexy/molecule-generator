@@ -106,12 +106,19 @@
 }
 .molecule-name {
   cursor: pointer;
-  padding: 0 30px;
   flex-direction: row;
+  padding: 0 30px;
   margin-bottom: 30px;
+  @media (max-width: 500px) {
+    padding: 0;
+    margin-bottom: 15px;
+  }
   h2 {
     width: auto;
     display: inline;
-    margin-right: 10px;
+    span {
+      margin-left: 10px;
+      font-weight: 400;
+    }
   }
 }
